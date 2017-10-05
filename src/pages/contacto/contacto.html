@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Contacto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Rellena este formulario si quieres realizar una aplicación movil en el taller de la WordCamp Chiclana</p>
+
+  <form>
+
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Nombre</ion-label>
+        <ion-input type="text" name="nombre" clearInput="true" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" name="email" clearInput="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Comentario</ion-label>
+        <ion-textarea name="comentario"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>No soy un robot</ion-label>
+        <ion-checkbox required></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button type="submit" icon-left full block>
+      <ion-icon name="send"></ion-icon>
+      Enviar
+    </button>
+
+  </form>
+
+</ion-content>

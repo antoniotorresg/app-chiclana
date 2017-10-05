@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ post.title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <img [src]="post.media_url | async">
+  <div [innerHTML]="post.content" padding></div>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Blog ProfesionalHosting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngFor="let post of posts | async" (click)="openPost(post)" tappable>
+    <img [src]="post.media_url | async">
+    <ion-item>
+      <ion-avatar item-left>
+        <img [src]="getUserImage(post.authorId)">
+      </ion-avatar>
+      <h2>{{ getUserName(post.authorId) }}</h2>
+    </ion-item>
+    <ion-card-content>
+      <ion-card-title>
+        {{ post.title }}
+      </ion-card-title>
+      <div [innerHTML]="post.excerpt"></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
