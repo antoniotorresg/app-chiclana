@@ -299,7 +299,7 @@ export class PostPage {
 
 Finalmente, para mostrar los elementos del post usamos de nuevo la **innerHTML** sintaxis pero esta vez el contenido de nuestro objeto post. Continúe y termine la vista dentro de **src/pages/post/post.html** :
 
-```javascript
+```html
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>{{ post.title }}</ion-title>
